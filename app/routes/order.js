@@ -1,9 +1,10 @@
+const express = require('express');
+const router = express.Router();
 const api = require('../controllers/order');
+const authService = require('../services/auth-service');
 
-module.exports = (app) => {
 
-    app.route('/orders')
-        .get(api.get)
-        .post(api.post);
+router.get('/', authService.authorize, api.get);
+router.post('/', authService.authorize, api.post);
 
-};
+module.exports = router;

@@ -18,10 +18,10 @@ const schema = new Schema({
         type: String,
         required: true,
     },     
-    address: {
+    /*address: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Address'
-    }, 
+    }, */
     password: {
         type: String,
         required: true,

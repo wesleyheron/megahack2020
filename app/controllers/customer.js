@@ -1,7 +1,7 @@
 const repository = require('../repositories/customer');
 const authService = require('../services/auth-service');
 const emailService = require('../services/email-service');
-const bcrypt = require('bcryptjs');
+const md5 = require('md5');
 
 exports.get = async (req, res, next) => {
     try {
@@ -20,14 +20,16 @@ exports.post = async (req, res, next) => {
         await repository.create({
             name: req.body.name,
             email: req.body.email,
-            password: bcrypt.hashSync(req.body.password, 8)
+            document: req.body.document,
+            phoneNumber: req.body.phoneNumber,
+            password: md5(req.body.password + global.SALT_KEY)
         });
 
         let mailOptions = {
-            to: req.body.email,
+            to: 'equipemegahack2020@protonmail.com',
             subject: 'Obrigado por se cadastrar em nossa plataforma',
             text: 'Obrigado!',
-            html: '<h1>Obrigado por confiar em nossos serviços</h1>'
+            html: global.EMAIL_TMPL_CUSTOMER
         };
 
         emailService.send(mailOptions);
@@ -52,8 +54,6 @@ exports.authenticate = async (req, res, next) => {
             password: md5(req.body.password + global.SALT_KEY)
         });
 
-        console.log("customer", customer);
-
         if (!customer) {
             res.status(404).send({
                 message: 'Usuário ou senha inválidos!'
@@ -64,8 +64,7 @@ exports.authenticate = async (req, res, next) => {
         const token = await authService.generateToken({
             id: customer.id,
             email: customer.email,
-            name: customer.name,
-            roles: customer.roles
+            name: customer.name
         });
 
         res.status(201).send({
@@ -92,8 +91,6 @@ exports.refreshToken = async (req, res, next) => {
         const data = await authService.decodeToken(token);
 
         const customer = await repository.getById(data.id);
-
-        console.log("customer", customer);
 
         if (!customer) {
             res.status(401).send({

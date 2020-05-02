@@ -27,9 +27,14 @@ const schema = new Schema({
         required: true,
         default: true
     },
-    product: {
+    company: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Company'
+    },
+    image: {
+        type: String,
+        required: true,
+        trim: true
     },
     tags: [{
         type: String,

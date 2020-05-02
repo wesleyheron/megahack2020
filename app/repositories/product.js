@@ -18,6 +18,15 @@ exports.getBySlug = async (slug) => {
     return res;
 };
 
+exports.getByCompany = async (companyId) => {
+    const res = await Product
+        .findOne({
+            company: companyId,
+            active: true
+        });
+    return res;
+};
+
 exports.getById = async(id) => {
     const res = await Product
         .findById(id);

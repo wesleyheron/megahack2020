@@ -1,7 +1,7 @@
 const repository = require('../repositories/company');
 const authService = require('../services/auth-service');
 const emailService = require('../services/email-service');
-const bcrypt = require('bcryptjs');
+const md5 = require('md5');
 
 exports.get = async (req, res, next) => {
     try {
@@ -23,7 +23,7 @@ exports.post = async (req, res, next) => {
             document: req.body.document,
             phoneNumber: req.body.phoneNumber,
             //address: req.body.address,
-            password: bcrypt.hashSync(req.body.password, 8)
+            password: md5(req.body.password + global.SALT_KEY)
         });
 
         let mailOptions = {
@@ -48,14 +48,11 @@ exports.post = async (req, res, next) => {
 };
 
 exports.authenticate = async (req, res, next) => {
-
     try {
         const company = await repository.authenticate({
             email: req.body.email,
-            password: bcrypt.compareSync(req.body.password, 8)
+            password: md5(req.body.password + global.SALT_KEY)
         });
-
-        console.log("company", company);
 
         if (!company) {
             res.status(404).send({
@@ -68,8 +65,8 @@ exports.authenticate = async (req, res, next) => {
             id: company.id,
             email: company.email,
             name: company.name
-            //roles: customer.roles
         });
+        console.log(token)
 
         res.status(201).send({
             token: token,

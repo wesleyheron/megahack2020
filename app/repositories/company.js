@@ -34,3 +34,11 @@ exports.delete = async(id) => {
     await Company
         .findOneAndRemove(id);
 };
+
+exports.authenticate = async (data) => {
+    const res = await Company.findOne({
+        email: data.email,
+        password:  data.password
+    });
+    return res;
+};

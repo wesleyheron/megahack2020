@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "guid": "0.0.12",
     "jsonwebtoken": "^8.5.1",
+    "md5": "^2.2.1",
     "mongoose": "^5.9.11",
     "nodemailer": "^6.4.6"
   }

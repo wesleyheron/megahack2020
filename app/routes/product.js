@@ -1,19 +1,21 @@
+const express = require('express');
+const router = express.Router();
 const api = require('../controllers/product');
+const authService = require('../services/auth-service');
 
-module.exports = (app) => {
-    
-    app.route('/products')
-        .get(api.get)
-        .post(api.post);
 
-    app.route('/products/:slug')
-        .get(api.getBySlug);
 
-    app.route('/products/tags/:tag')
-        .get(api.getByTag);
+router.get('/', api.get);
+router.get('/:slug', api.getBySlug);
+router.get('/tags:tag', api.getByTag);
+router.get('/admin/:id', authService.authorize, api.getByCompany);
 
-    app.route('/products/admin/:id')
-        .delete(api.delete)
-        .get(api.getById)
-        .put(api.put);
-};
+router.post('/', authService.authorize, api.post);
+
+router.put('/:id', authService.isAdmin, api.put);
+router.delete('/', authService.isAdmin, api.delete);
+
+//router.post('/authenticate', api.authenticate);
+//router.post('/refresh-token', authService.authorize, api.refreshToken);
+
+module.exports = router;

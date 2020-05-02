@@ -3,6 +3,7 @@ global.SALT_KEY = 'FDCA2D681F975FCD54BB8248D2E46';
 global.password = 'MegaHack2020#';
 global.EMAIL_TMPL = 'Olá, <strong>{0}</strong>, seja bem vindo à Nossa Plataforma!';
 
+
 module.exports = {
         
 };

@@ -46,6 +46,17 @@ exports.getByTag = async (req, res, next) => {
     }
 };
 
+exports.getByCompany = async (req, res, next) => {
+    try {
+        var data = await repository.getByCompany(req.params.id);
+        res.status(200).send(data);
+    } catch (e) {
+        res.status(500).send({
+            message: 'Falha ao processar sua requisição!'
+        });
+    }
+};
+
 exports.post = async (req, res, next) => {
 
     try {

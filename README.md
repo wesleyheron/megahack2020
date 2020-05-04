@@ -29,4 +29,7 @@ varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?
 <img width="200px" heigth="260px;" src="./app/config/img/2.jpeg"/> 
 <img width="200px" heigth="260px;" src="./app/config/img/3.jpeg"/>
 <img width="200px" heigth="260px;" src="./app/config/img/4.jpeg"/>
+<img width="200px" heigth="260px;" src="./app/config/img/5.jpeg"/>
+<img width="200px" heigth="260px;" src="./app/config/img/6.jpeg"/>
+<img width="200px" heigth="260px;" src="./app/config/img/7.jpeg"/>
 </p>

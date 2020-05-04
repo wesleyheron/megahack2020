@@ -18,7 +18,7 @@ varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?
 <h2>Código da API desenvolvida na participação do <strong>Megahackton da Shawee</strong></h2>
 <p>Para executar o projeto: </p>
 <p><code>git clone</code>: https://github.com/wesleyheron/megahack2020.git</p>
-<p>navegue até a pasta criada que contém os arquivos clonados do repositório <code>cd megahack2020</code</p>
+<p>navegue até a pasta criada que contém os arquivos clonados do repositório <code>cd megahack2020</code></p>
 <p><code>npm install</code></p>
 <p><code>node server.js</code></p>
 <p>As calls para a <code>API localhost</code> podem ser feitas importando a collection no postman: https://www.getpostman.com/collections/941f3ce9eefaa4203738</p>

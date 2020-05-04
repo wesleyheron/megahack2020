@@ -1,5 +1,5 @@
 
-<p><h1>Equipe 6 (Desafio VTex)</h1>🚀🚀</p>
+Equipe 6 (Desafio VTex) 🚀🚀
 <p align="center">
     <img width="150px" heigth="150px;" src="./app/config/img/vitrinify.png">
 </p>

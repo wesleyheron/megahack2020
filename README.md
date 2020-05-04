@@ -1,5 +1,5 @@
 
-Equipe 6 (Desafio VTex) 🚀🚀
+<strong>Equipe 6 (Desafio VTex) 🚀🚀 </strong>
 <p align="center">
     <img width="150px" heigth="150px;" src="./app/config/img/vitrinify.png">
 </p>
@@ -15,7 +15,7 @@ Como resolver essa equação e trazer agilidade, tecnologia e novas formas de co
 O varejo online é um caminho, sim. Mas como realizar isso de forma criativa e transformar o
 varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?</p>
 
-<h3>Código da API desenvolvida na participação do <strong>Megahackton da Shawee</strong></h3>
+<strong>Código da API desenvolvida na participação do Megahackton da Shawee</strong>
 <p>Para executar o projeto: </p>
 <p><code>git clone</code>: https://github.com/wesleyheron/megahack2020.git</p>
 <p>navegue até a pasta criada que contém os arquivos clonados do repositório <code>cd megahack2020</code></p>

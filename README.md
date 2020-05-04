@@ -23,6 +23,9 @@ varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?
 <p><code>node server.js</code></p>
 <p>As calls para a <code>API localhost</code> podem ser feitas importando a collection no postman: https://www.getpostman.com/collections/941f3ce9eefaa4203738</p>
 
-<img width="150px" heigth="150px;" src="./app/config/img/1.jpeg" > <img width="150px" heigth="150px;" src="./app/config/img/1.jpeg"/> 
-<img width="150px" heigth="150px;" src="./app/config/img/1.jpeg"/>
-<img width="150px" heigth="150px;" src="./app/config/img/1.jpeg"/>
+<p align="center">
+<img width="200px" heigth="260px;" src="./app/config/img/1.jpeg"/> 
+<img width="200px" heigth="260px;" src="./app/config/img/2.jpeg"/> 
+<img width="200px" heigth="260px;" src="./app/config/img/3.jpeg"/>
+<img width="200px" heigth="260px;" src="./app/config/img/4.jpeg"/>
+</p>

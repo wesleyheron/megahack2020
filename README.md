@@ -1,5 +1,5 @@
 
-<h1>Equipe 6 (Desafio VTex)</h1>
+<h1>Equipe 6 (Desafio VTex) 🚀🚀</h1>
 <p align="center">
     <img width="150px" heigth="150px;" src="./app/config/img/vitrinify.png">
 </p>
@@ -23,7 +23,7 @@ varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?
 <p><code>node server.js</code></p>
 <p>As calls para a <code>API localhost</code> podem ser feitas importando a collection no postman: https://www.getpostman.com/collections/941f3ce9eefaa4203738</p>
 
-<p>Imagens do app</p>
+<p>Imagens do app <code>vitrinify</code></p>
 <p align="center">
 <img width="200px" heigth="260px;" src="./app/config/img/1.jpeg"/> 
 <img width="200px" heigth="260px;" src="./app/config/img/2.jpeg"/> 

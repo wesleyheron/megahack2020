@@ -26,7 +26,7 @@ exports.post = async (req, res, next) => {
         });
 
         let mailOptions = {
-            to: 'equipemegahack2020@protonmail.com',
+            to: req.body.email,
             subject: 'Obrigado por se cadastrar em nossa plataforma',
             text: 'Obrigado!',
             html: global.EMAIL_TMPL_CUSTOMER
@@ -44,6 +44,32 @@ exports.post = async (req, res, next) => {
         });
     }
 
+};
+
+exports.getByEmail = async (req, res, next) => {
+    
+    try {
+
+        const customer = await repository.getByEmail(req.params.email);
+        
+  
+        if(customer.length > 0) {
+            res.status(200).send({
+                customer
+            });
+        }
+        else {
+            res.status(404).send({
+                message: 'Email não localizado!'
+            });
+        }       
+
+    } catch(e) {
+        res.status(500).send({
+            message: 'Falha ao processar sua requisição!' +
+                console.log(e.message)
+        });
+    }
 };
 
 exports.authenticate = async (req, res, next) => {

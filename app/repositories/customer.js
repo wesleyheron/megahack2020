@@ -7,6 +7,11 @@ exports.get = async () => {
         return custumers;
 };
 
+exports.getByEmail = async (data) => {   
+    const custumer = await Customer.find({email: data});
+    return custumer;
+};
+
 exports.create = async(data) => {
     
     var customer = new Customer(data);

@@ -15,7 +15,7 @@ Como resolver essa equação e trazer agilidade, tecnologia e novas formas de co
 O varejo online é um caminho, sim. Mas como realizar isso de forma criativa e transformar o
 varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?</p>
 
-<h2>Código da API desenvolvida na participação do <strong>Megahackton da Shawee</strong></h2>
+<h3>Código da API desenvolvida na participação do <strong>Megahackton da Shawee</strong></h3>
 <p>Para executar o projeto: </p>
 <p><code>git clone</code>: https://github.com/wesleyheron/megahack2020.git</p>
 <p>navegue até a pasta criada que contém os arquivos clonados do repositório <code>cd megahack2020</code></p>
@@ -23,6 +23,7 @@ varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?
 <p><code>node server.js</code></p>
 <p>As calls para a <code>API localhost</code> podem ser feitas importando a collection no postman: https://www.getpostman.com/collections/941f3ce9eefaa4203738</p>
 
+<p>Imagens do app</p>
 <p align="center">
 <img width="200px" heigth="260px;" src="./app/config/img/1.jpeg"/> 
 <img width="200px" heigth="260px;" src="./app/config/img/2.jpeg"/> 

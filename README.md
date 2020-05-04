@@ -1,6 +1,8 @@
-<h1>Equipe 6 (Desafio VTex)</h1>
 
-<img src="https://drive.google.com/file/d/1PjbeUwoNj6hxuZzWT7yqJ01Sq0g7KBBw/view?usp=sharing/Logo_vitrinify.png">
+<h1>Equipe 6 (Desafio VTex)</h1>
+<p align="center">
+    <img width="150px" heigth="150px;" src="./app/config/img/vitrinify.png">
+</p>
 <strong>Desafio</strong>
 <p>A Pandemia do corona vírus nos trouxe diversos desafios paralelo ao da saúde, e isso é o
 que torna essa crise ainda mais complexa.
@@ -20,3 +22,7 @@ varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?
 <p><code>npm install</code></p>
 <p><code>node server.js</code></p>
 <p>As calls para a <code>API localhost</code> podem ser feitas importando a collection no postman: https://www.getpostman.com/collections/941f3ce9eefaa4203738</p>
+
+<img width="150px" heigth="150px;" src="./app/config/img/1.jpeg" > <img width="150px" heigth="150px;" src="./app/config/img/1.jpeg"/> 
+<img width="150px" heigth="150px;" src="./app/config/img/1.jpeg"/>
+<img width="150px" heigth="150px;" src="./app/config/img/1.jpeg"/>

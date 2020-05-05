@@ -15,6 +15,9 @@ Como resolver essa equação e trazer agilidade, tecnologia e novas formas de co
 O varejo online é um caminho, sim. Mas como realizar isso de forma criativa e transformar o
 varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?</p>
 
+<p><a href="https://drive.google.com/file/d/1WNGu_fpm0zCrIDMYiimbHegB6lNbAjZW/view">Vídeo Pitch</a></p>
+<p><a href="https://docs.google.com/presentation/d/1MrwMVVah3dfglik2Re8RXUDxUNZEzLzppvW3nkC5TCI/edit#slide=id.gc6f80d1ff_0_0">Apresentação Desafio Vtex</a></p>
+
 <strong>Código da API desenvolvida na participação do Megahackton da Shawee</strong>
 <p>Para executar o projeto: </p>
 <p><code>git clone</code>: https://github.com/wesleyheron/megahack2020.git</p>

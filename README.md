@@ -23,6 +23,8 @@ varejo em algo novo? Sabemos que o novo normal está aí. Como vamos encará-lo?
 <p><code>node server.js</code></p>
 <p>As calls para a <code>API localhost</code> podem ser feitas importando a collection no postman: https://www.getpostman.com/collections/941f3ce9eefaa4203738</p>
 
+<a href="https://github.com/alissonmartineli/vitrinify-empresas">Repositório app</a>
+
 <p>Imagens do app <code>vitrinify</code></p>
 <p align="center">
 <img width="200px" heigth="260px;" src="./app/config/img/1.jpeg"/> 
